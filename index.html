@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project B - Vanilla</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="nav-container">
+            <a href="#" class="active">News Feed</a>
+            <a href="./page_music.html">Music Player</a>
+        </nav>
+        <div id="feed-container">
+            <div id="feed-action-bar">
+                 <div class="feed-action">
+                    <span>Sort: </span>
+                    <select id="select-sort">
+                        <option value="">None</option>
+                        <option value="ASCENDING">Ascending</option>
+                        <option value="DESCENDING">Descending</option>
+                    </select>
+                </div>
+                <div class="feed-action">
+                    <span>Filter by UserID: </span>
+                    <select id="select-filter">
+                        <option value="-1">None</option>
+                    </select>
+                </div>
+            </div>
+            <div id="feed-list"></div>
+        </div>
+    </div>
+  <script src="./scripts/feed.js"></script>
+</body>
+
+</html>
